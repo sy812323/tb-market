@@ -1,0 +1,134 @@
+@charset "utf-8";
+/*css document*/
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size: 26.67vw;
+	height: 100%;
+}
+body{
+	font-family: "微软雅黑",Arial;
+	background: #ffffff;
+	height: 100%;
+	/* display: -webkit-flex;
+	-webkit-flex-direction:column; */
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:0;
+	display: block;
+}
+a{
+	text-decoration: none;
+	display: block;
+	color: #333333;
+}
+span{
+	display: block;
+}
+h3{
+	font-weight: normal;
+}
+i{
+    display: block;
+}
+/* header */
+header{
+    width: 100%;
+    height: .44rem;
+    display: -webkit-flex;
+    -webkit-justify-content:space-between;
+    -webkit-align-items:center;
+    background: 0 0;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+.tb-market-header-left a i{
+    margin-left: 10px;
+    font-size: .16rem;
+    color: white;
+}
+.tb-market-header-center{
+    display: -webkit-flex;
+    -webkit-align-items:center;
+}
+.center-logo{
+    font-size: .28rem;
+    padding-right: 5px;
+}
+.center-address{
+    display: -webkit-flex;
+    -webkit-align-items:center;
+}
+.city{
+    font-size: .12rem;
+    color: white;
+    line-height: .12rem;
+    padding-left: 6px;
+    border-left: 1px solid rgba(255,255,255,.5);
+}
+.sanjiao{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:4px 3px 0;
+    border-color:rgba(94,99,109,.5) transparent transparent;
+    margin-left: 3px;
+}
+.tb-market-header-right a i{
+    font-size: .3rem;
+    color: white;
+    margin-right: 10px;
+}
+/* content */
+.content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.tb-market-content-search{
+    height: .3rem;
+    width: 3.45rem;
+    position: absolute;
+    top: .44rem;
+    left: 50%;
+    margin-left:-1.725rem;
+    z-index: 10;
+}
+.tb-market-content-search input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: .15rem;
+    outline: none;
+    background:white;
+    height: .3rem;
+    padding-left: .3rem;
+    box-sizing: border-box;
+    color: #999;
+}
+.tb-market-content-search i{
+    width: .3rem;
+    height: .3rem;
+    font-size: .18rem;
+    line-height: .3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #999;
+}
+.tb-market-content-banner{
+    width: 100%;
+    height: 2.69rem;
+}
+.tb-market-content-banner img{
+    width: 100%;
+}
