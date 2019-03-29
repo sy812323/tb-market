@@ -4,9 +4,13 @@ $(function(){
 		if(Math.ceil(temp)>0){
 			$("header").css({"background":"white","transition":"background .3s"});
 			$(".tb-market-header-right a i,.tb-market-header-left a i").css("color","#5F646E");
+			$(".city").css({"color":"#5f646e","border-left":"1px solid rgba(94,99,109,.3)"});
+			$(".center-logo").css("color","#1b5");
 		}else{
 			$("header").css({"background":"0 0","transition":"background .3s"});
 			$(".tb-market-header-right a i,.tb-market-header-left a i").css("color","white");
+			$(".city").css({"color":"#5f646e","border-left":"1px solid rgba(255,255,255,.5)"});
+			$(".center-logo").css("color","white");
 		}
 	})
 });
