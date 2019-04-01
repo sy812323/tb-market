@@ -1,0 +1,236 @@
+@charset "utf-8";
+/*css document*/
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size: 26.67vw;
+	height: 100%;
+}
+body{
+	font-family: "微软雅黑",Arial;
+	background: #f8f8f8;
+	height: 100%;
+	display: -webkit-flex;
+	-webkit-flex-direction:column;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:0;
+	display: block;
+}
+a{
+	text-decoration: none;
+	display: block;
+	color: #333333;
+}
+span{
+	display: block;
+}
+h3{
+	font-weight: normal;
+}
+i{
+    display: block;
+}
+/* header */
+header{
+    height: .43rem;
+    font-size: .14rem;
+    background: #eee;
+}
+.header-wrap{
+    padding: 6px;
+    display: -webkit-flex;
+    font-size: 12px;
+    -webkit-align-items:center;
+}
+.header-wrap span{
+    display: inline-block;
+    line-height: .32rem;
+}
+.header-home{
+    width: .8rem;
+    color: #888;
+    margin-right: .14rem;
+    
+}
+.header-home i{
+    font-size: .23rem;
+    width: .2rem;
+    display: inline-block;
+}
+.header-search{
+    -webkit-flex:1;
+    color: #888;
+    padding: 0 4px 0 11px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    font-size: .14rem;
+}
+.header-search i{
+    font-size: .2rem;
+    width: .2rem;
+    display: inline-block; 
+}
+.header-filter{
+    width: .52rem;
+}
+.header-filter i{
+    font-size: .2rem;
+    width: .2rem;
+    display: inline-block; 
+}
+/* content */
+.tb-market-goodsList-content{
+    width: 100%;
+    overflow-y: auto;
+}
+.tb-market-goodsList-content::-webkit-scrollbar{
+    display: none;
+}
+.tb-market-content-filter-nav{
+    padding: 8px 6px;
+    background-color: #efeff4;
+    border-bottom: 1px solid #d8d8d8;
+    overflow: hidden;
+}
+.tb-market-content-filter-nav ul{
+    display: -webkit-flex;
+}
+.tb-market-content-filter-nav ul li{
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #5e646e;
+    border-left: 0;
+    width: 33.3%;
+}
+.tb-market-content-filter-nav ul li a{
+    color: #5e646e;
+    font-size: .14rem;
+}
+.tb-market-content-filter-nav ul li:first-child{
+    border-left: 1px solid #5e646e;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: #5e646e;
+}
+.tb-market-content-filter-nav ul li:first-child a{
+    color: white;
+    font-size: .14rem;
+}
+.tb-market-content-filter-nav ul li:last-child{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.tb-market-content-filter-nav ul li a i{
+    display: inline-block;
+    font-size: .14rem;
+    margin-left: 5px;
+}
+.tb-market-content-product{
+    background: #fff;
+    padding-bottom: 10px;
+}
+.product-wrapper{
+    width: 100%;
+    padding: 6px 6px 0;
+    box-sizing: border-box;
+}
+.product{
+    display: -webkit-flex;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #cacaca;
+    position: relative;
+}
+.product-img-wrap{
+    width: 32.5%;
+    margin-right: .23rem;
+}
+.product-img-wrap a img{
+    width: 1rem;
+    margin: 0 auto;
+}
+.product-desc-wrap{
+    -webkit-flex:1;
+    padding-top:6px; 
+}
+.desc-title{
+    line-height: .17rem;
+    height: .36rem;
+    padding-right: 8px;
+    margin-bottom: 8px;
+}
+.desc-title a{
+    font-size: .13rem;
+    color: #333;
+}
+.desc-line{
+    margin-right: 48px;
+    border-top: dotted 1px #e2e2e2;
+}
+.desc-saleNum{
+    margin-top: .22rem;
+    margin-right: .48rem;
+    color: #bbb;
+    font-size: 10px;
+}
+.desc-saleNum span{
+    display: inline-block;
+}
+.desc-price{
+    display: -webkit-flex;
+    -webkit-align-items:center;
+}
+.desc-price span{
+    color: #000;
+    font-size: .15rem;
+    font-weight: 700;
+    margin-left: 2px;
+}
+.desc-price del{
+    font-size: 12px;
+    color: #bbb;
+    margin-left: 2px;
+}
+.addCart{
+    position: absolute;
+    right: 0;
+    top: .7rem;
+}
+.addCart a{
+    width: 36px;
+    height: 36px;
+    border-radius: 20px;
+    text-indent: 7px;
+    line-height: 37px;
+    background-color: #e8374d;
+    color: #e8374d;
+}
+.addCart a i{
+    color: white;
+    font-size: .22rem;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: .44rem;
+    border-top: 1px solid #ddd;
+    background: #f0f0f0;
+}
+footer a{
+    float: right;
+    margin: 10px .13rem 0 0;
+}
+footer a i{
+    font-size: .2rem !important;
+}

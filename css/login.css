@@ -1,0 +1,106 @@
+@charset "utf-8";
+/*css document*/
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size: 26.67vw;
+	height: 100%;
+}
+body{
+	font-family: "微软雅黑",Arial;
+	background: #f0f0f0;
+	height: 100%;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:0;
+	display: block;
+}
+a{
+	text-decoration: none;
+	display: block;
+	color: #333333;
+}
+span{
+	display: block;
+}
+h3{
+	font-weight: normal;
+}
+i{
+    display: block;
+}
+/* header */
+header{
+    width: 100%;
+    height: .44rem;
+    border-bottom: 1px solid #c8c8c8;
+    text-align: center;
+    background: #f7f7f8;
+    line-height: .44rem;
+}
+header h1{
+    font-size: .18rem;
+    font-weight: normal;
+    color: #000;
+}
+/* content */
+.loginForm{
+    margin-top: .18rem;
+    font-size: .16rem;
+}
+.input-line{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: .14rem .1rem;
+    color: #6c6c6c;
+    background-color: #fff;
+    text-align: left;
+    height: .21rem;
+}
+.line-type{
+    width: .75rem;
+}
+.line-input-area{
+    flex: 1;
+}
+.line-input-area input{
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    font-size: 100%;
+    
+}
+.line-input-area input::-webkit-input-placeholder{
+    color: #ddd;
+}
+.submit{
+    margin: .18rem .1rem 0;
+}
+.button{
+    width: 100%;
+    height: .46rem;
+    line-height: .46rem;
+    border: 1px solid #ff0036;
+    border-radius: 5px;
+    color: #fff;
+    background: #ff0036;
+    text-align: center;
+    font-size: .16rem;
+    display: block;
+}
+.other-link{
+    margin: .15rem .1rem;
+    color: #6c6c6c;
+    display: flex;
+    justify-content: space-between;
+}
+.other-link a{
+    color: #ff0036;
+}
